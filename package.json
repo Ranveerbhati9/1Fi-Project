@@ -1,7 +1,7 @@
 {
-  "name": "1fi-sde1-assignment",
+  "name": "1fi-project",
   "version": "1.0.0",
-  "description": "1Fi SDE1 Assignment - Mutual Fund Backed Product EMI Web Application",
+  "description": "1Fi-Application",
   "scripts": {
     "dev": "concurrently -n \"backend,frontend\" -c \"blue,green\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
     "start": "npm run start --prefix backend",
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ranveerbhati9/1fi_assigment.git"
+    "url": "https://github.com/Ranveerbhati9/1Fi-Project"
   },
   "author": "Ranveer Bhati",
   "license": "MIT",
