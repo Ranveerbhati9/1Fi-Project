@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pixBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#858E80" />
+      <stop offset="50%" stop-color="#666E61" />
+      <stop offset="100%" stop-color="#666E61" />
+    </linearGradient>
+    <linearGradient id="lensGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" /><stop offset="60%" stop-color="#0F172A" /><stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <radialGradient id="lensReflect" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#030712" stop-opacity="0.9" />
+    </radialGradient>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="barShadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Pixel 9 Pro curved body -->
+  <rect x="25" y="20" width="290" height="590" rx="42" fill="#858E80" filter="url(#phoneShadow)" />
+  <rect x="28" y="23" width="284" height="584" rx="39" fill="url(#pixBodyGrad)" />
+
+  <!-- Iconic Pixel 9 Camera Visor Island (Horizontal pill) -->
+  <rect x="42" y="68" width="256" height="74" rx="37" fill="#18181B" filter="url(#barShadow)" stroke="#858E80" stroke-width="2.5"/>
+
+  <!-- Pill Camera Cutout Inside Visor -->
+  <rect x="56" y="80" width="150" height="50" rx="25" fill="#09090B"/>
+  <!-- Main Lens -->
+  <circle cx="86" cy="105" r="19" fill="url(#lensGlass)"/>
+  <circle cx="86" cy="105" r="16" fill="url(#lensReflect)"/>
+  <circle cx="82" cy="101" r="5" fill="#FFFFFF" fill-opacity="0.45"/>
+  <!-- Ultra-wide Lens -->
+  <circle cx="130" cy="105" r="16" fill="url(#lensGlass)"/>
+  <circle cx="130" cy="105" r="13" fill="url(#lensReflect)"/>
+  <!-- 5x Telephoto periscope -->
+  <circle cx="174" cy="105" r="17" fill="url(#lensGlass)"/>
+  <circle cx="174" cy="105" r="14" fill="url(#lensReflect)"/>
+
+  <!-- Flash & Temp Sensor on Right side of Visor -->
+  <circle cx="254" cy="94" r="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1"/>
+  <circle cx="254" cy="116" r="6" fill="#3F3F46"/>
+
+  <!-- Google G Logo in Center -->
+  <g transform="translate(156, 320) scale(0.65)" opacity="0.3">
+    <path d="M24 10C16.3 10 10 16.3 10 24s6.3 14 14 14c7.3 0 13.3-5.6 13.9-12.7H24v-5.3h19.5c.2.9.3 1.8.3 2.7 0 11.6-9.4 21-21 21C11.4 43 2 33.6 2 22S11.4 1 23 1c5.6 0 10.7 2.1 14.5 5.6l-3.9 3.9C30.8 7.9 27.1 6.5 24 6.5 14.3 6.5 6.5 14.3 6.5 24S14.3 41.5 24 41.5c9 0 16.5-6.8 17.4-15.5H24v-6h17.5" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="samBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#363636" />
+      <stop offset="40%" stop-color="#1E1E1E" />
+      <stop offset="100%" stop-color="#18181B" />
+    </linearGradient>
+    <linearGradient id="lensGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" /><stop offset="60%" stop-color="#0F172A" /><stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <radialGradient id="lensReflect" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#030712" stop-opacity="0.9" />
+    </radialGradient>
+    <filter id="phoneShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Boxy sharp corners (S24 Ultra aesthetic) -->
+  <rect x="25" y="20" width="290" height="590" rx="14" fill="#363636" filter="url(#phoneShadow)" />
+  <rect x="28" y="23" width="284" height="584" rx="12" fill="url(#samBodyGrad)" />
+  
+  <!-- S24 Ultra Quad Cameras (Vertical alignment) -->
+  <!-- Main 200MP Lens -->
+  <circle cx="68" cy="72" r="22" fill="#1C1917" stroke="#363636" stroke-width="2.5"/>
+  <circle cx="68" cy="72" r="18" fill="url(#lensGlass)"/>
+  <circle cx="68" cy="72" r="15" fill="url(#lensReflect)"/>
+  <circle cx="64" cy="68" r="5" fill="#FFFFFF" fill-opacity="0.5"/>
+
+  <!-- Ultra-wide Lens -->
+  <circle cx="68" cy="126" r="22" fill="#1C1917" stroke="#363636" stroke-width="2.5"/>
+  <circle cx="68" cy="126" r="18" fill="url(#lensGlass)"/>
+  <circle cx="68" cy="126" r="15" fill="url(#lensReflect)"/>
+  <circle cx="64" cy="122" r="5" fill="#FFFFFF" fill-opacity="0.5"/>
+
+  <!-- Periscope 5x Telephoto -->
+  <circle cx="68" cy="180" r="22" fill="#1C1917" stroke="#363636" stroke-width="2.5"/>
+  <circle cx="68" cy="180" r="18" fill="url(#lensGlass)"/>
+  <circle cx="68" cy="180" r="15" fill="url(#lensReflect)"/>
+  <circle cx="64" cy="176" r="5" fill="#FFFFFF" fill-opacity="0.5"/>
+
+  <!-- Laser AF / Secondary 3x Column -->
+  <circle cx="118" cy="72" r="13" fill="#1C1917" stroke="#363636" stroke-width="1.8"/>
+  <circle cx="118" cy="72" r="10" fill="url(#lensGlass)"/>
+  <circle cx="118" cy="104" r="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <circle cx="118" cy="136" r="13" fill="#1C1917" stroke="#363636" stroke-width="1.8"/>
+  <circle cx="118" cy="136" r="10" fill="url(#lensGlass)"/>
+
+  <!-- Samsung Logo at bottom -->
+  <text x="170" y="550" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.3" font-family="system-ui, sans-serif" font-weight="700" font-size="14" letter-spacing="4">
+    SAMSUNG
+  </text>
+</svg>

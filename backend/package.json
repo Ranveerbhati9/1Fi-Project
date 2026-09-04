@@ -1,0 +1,23 @@
+{
+  "name": "1fi-backend",
+  "version": "1.0.0",
+  "description": "1Fi SDE1 Assignment - Node.js, Express and MongoDB API",
+  "author": "Ranveer Bhati",
+  "license": "MIT",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^7.6.0",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
