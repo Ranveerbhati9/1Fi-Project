@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: 1fi-product-emi
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run render-build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
