@@ -3,7 +3,8 @@ services:
     name: 1fi-product-emi
     runtime: node
     plan: free
-    buildCommand: npm install --include=dev && npm run render-build
+    region: singapore
+    buildCommand: npm run render-build
     startCommand: npm start
     healthCheckPath: /api/health
     envVars:
